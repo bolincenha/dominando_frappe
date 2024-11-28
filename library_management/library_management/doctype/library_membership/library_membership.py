@@ -4,6 +4,7 @@
 import frappe
 from frappe.model.document import Document
 from frappe.model.docstatus import DocStatus
+from frappe.utils import add_days
 
 class LibraryMembership(Document):
 	# check before submitting this document
@@ -18,3 +19,7 @@ class LibraryMembership(Document):
 			},
 		):
 			frappe.throw("There is an active membership for this member")
+
+		# get loan period and compute to_date by adding membership_period to from_date
+		membership_period = frappe.db.get_single_value("Library Settings", "membership_period")
+		self.to_date = add_days(self.from_date, membership_period or 30)

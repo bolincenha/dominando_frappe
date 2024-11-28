@@ -68,7 +68,7 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-27 10:46:39.272647",
+ "modified": "2024-11-28 09:58:36.039342",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Transaction",
@@ -82,7 +82,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Librarian",
    "share": 1,
    "submit": 1,
    "write": 1

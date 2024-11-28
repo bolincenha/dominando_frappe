@@ -43,7 +43,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-18 10:45:26.269147",
+ "modified": "2024-11-28 09:58:56.292971",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
@@ -57,7 +57,7 @@
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "System Manager",
+   "role": "Librarian",
    "share": 1,
    "write": 1
   }

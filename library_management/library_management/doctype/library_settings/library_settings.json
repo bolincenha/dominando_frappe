@@ -1,0 +1,51 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-11-28 10:03:28.827612",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "membership_period",
+  "column_break_kgfi",
+  "max_articles"
+ ],
+ "fields": [
+  {
+   "fieldname": "membership_period",
+   "fieldtype": "Int",
+   "label": "Membership Period"
+  },
+  {
+   "fieldname": "column_break_kgfi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_articles",
+   "fieldtype": "Int",
+   "label": "Maximum Number of Issued Articles"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-11-28 10:04:25.009081",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Library Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Librarian",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
