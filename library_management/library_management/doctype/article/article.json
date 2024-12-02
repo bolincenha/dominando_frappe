@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_guest_to_view": 1,
  "allow_rename": 1,
  "autoname": "field:article_name",
  "creation": "2024-11-18 10:36:02.324519",
@@ -9,11 +10,13 @@
   "basic_info_section",
   "article_name",
   "author",
+  "route",
   "image",
   "column_break_sftz",
   "isbn",
   "publisher",
   "status",
+  "published",
   "description_section",
   "description"
  ],
@@ -70,12 +73,25 @@
    "fieldname": "description_section",
    "fieldtype": "Section Break",
    "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
   }
  ],
+ "has_web_view": 1,
  "image_field": "image",
  "index_web_pages_for_search": 1,
+ "is_published_field": "published",
  "links": [],
- "modified": "2024-11-18 10:40:42.912562",
+ "modified": "2024-12-02 10:58:37.224415",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -116,6 +132,7 @@
    "share": 1
   }
  ],
+ "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []
