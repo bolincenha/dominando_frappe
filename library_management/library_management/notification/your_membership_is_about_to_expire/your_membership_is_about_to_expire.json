@@ -1,0 +1,30 @@
+{
+ "attach_print": 0,
+ "channel": "Email",
+ "condition": "doc.email_address",
+ "creation": "2024-12-16 16:03:42.894907",
+ "date_changed": "to_date",
+ "days_in_advance": 7,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Library Membership",
+ "enabled": 1,
+ "event": "Days Before",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "<p>Your membership is about to expire.</p>",
+ "message_type": "HTML",
+ "modified": "2024-12-16 16:03:42.894907",
+ "modified_by": "Administrator",
+ "module": "Library Management",
+ "name": "Your membership is about to expire",
+ "owner": "Administrator",
+ "recipients": [
+  {
+   "receiver_by_document_field": "email_address"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 0,
+ "subject": "Your membership is about to expire"
+}

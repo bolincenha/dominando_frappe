@@ -8,6 +8,7 @@
   "section_break_utn0",
   "library_member",
   "full_name",
+  "email_address",
   "paid",
   "column_break_ytal",
   "from_date",
@@ -64,12 +65,20 @@
   {
    "fieldname": "column_break_ytal",
    "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "library_member.email_address",
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address",
+   "options": "Email",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-11-28 09:58:44.988167",
+ "modified": "2024-12-16 15:57:57.777301",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Membership",

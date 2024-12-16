@@ -33,7 +33,8 @@
   {
    "fieldname": "email_address",
    "fieldtype": "Data",
-   "label": "Email Address"
+   "label": "Email Address",
+   "options": "Email"
   },
   {
    "fieldname": "phone",
@@ -43,7 +44,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-11-28 09:58:56.292971",
+ "modified": "2024-12-16 15:56:16.177609",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
