@@ -16,6 +16,7 @@
   "isbn",
   "publisher",
   "status",
+  "book_holder",
   "published",
   "description_section",
   "description"
@@ -84,6 +85,12 @@
    "fieldname": "route",
    "fieldtype": "Data",
    "label": "Route"
+  },
+  {
+   "fieldname": "book_holder",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "Book Holder"
   }
  ],
  "has_web_view": 1,
@@ -91,7 +98,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-12-02 10:58:37.224415",
+ "modified": "2025-01-28 15:24:08.016854",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",

@@ -6,10 +6,10 @@ from frappe.website.website_generator import WebsiteGenerator
 from frappe import _
 
 class Article(WebsiteGenerator):
-	@frappe.whitelist()
-	def get_book_holder(self):
-		if self.status != "Issued":
-			frappe.throw(_("Article is not issued"))
+	@property
+	def book_holder(self):
+		if self.status != "Issued" and not self.is_new():
+			return ""
 
 		last = frappe.get_all("Library Transaction",
 			filters={
@@ -21,10 +21,10 @@ class Article(WebsiteGenerator):
 			limit=1,
 		)
 		if not last:
-			return None
+			return ""
 
 		if last[0].type != "Issue":
-			return None
+			return ""
 
 		if not frappe.db.exists("Library Member", last[0].library_member):
 			frappe.throw(_("Library Member not found"))
