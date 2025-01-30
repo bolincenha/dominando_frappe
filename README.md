@@ -21,3 +21,5 @@ Este repositório é organizado por commits. A cada aula, fazemos um commit com 
 Para visualizar o conteúdo de uma aula específica, basta navegar pelos commits e explorar o que foi construído.
 
 E ae Guilherme, deu boa ou fiz cadaga? rsrs
+
+e ae
