@@ -19,3 +19,5 @@ As aulas estão disponíveis no YouTube. Clique [aqui](https://www.youtube.com/@
 Este repositório é organizado por commits. A cada aula, fazemos um commit com o nome da aula, permitindo que você acompanhe o que foi feito de forma cronológica e prática.
 
 Para visualizar o conteúdo de uma aula específica, basta navegar pelos commits e explorar o que foi construído.
+
+E ae Guilherme, deu boa ou fiz cadaga? rsrs
