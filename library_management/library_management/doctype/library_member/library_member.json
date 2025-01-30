@@ -38,13 +38,14 @@
   },
   {
    "fieldname": "phone",
-   "fieldtype": "Data",
-   "label": "Phone"
+   "fieldtype": "Table",
+   "label": "Phone",
+   "options": "Library Member Phone"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-12-16 15:56:16.177609",
+ "modified": "2025-01-30 12:03:46.167872",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
