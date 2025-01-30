@@ -23,3 +23,5 @@ Para visualizar o conteúdo de uma aula específica, basta navegar pelos commits
 E ae Guilherme, deu boa ou fiz cadaga? rsrs
 
 e ae
+
+agora deu boa haha
