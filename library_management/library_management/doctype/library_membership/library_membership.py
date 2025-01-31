@@ -9,6 +9,10 @@ from frappe.utils import add_days
 class LibraryMembership(Document):
 	# check before submitting this document
 	def before_submit(self):
+		self.set_membership_period()
+
+	@frappe.whitelist()
+	def set_membership_period(self):
 		if frappe.db.exists(
 			"Library Membership",
 			{
