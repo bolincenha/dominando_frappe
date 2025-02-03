@@ -13,5 +13,20 @@ frappe.ui.form.on("Library Member", {
                 library_member: frm.doc.name
             })
         })
+        frm.add_custom_button(__('Add Phone'), () => {
+            frm.add_child('phone', {
+                phone: ''
+            })
+            frm.refresh_field('phone');
+        })
+	},
+});
+
+frappe.ui.form.on("Library Member Phone", {
+	phone(frm, cdt, cdn) {
+        frm.call('format_phone')
+            .then(r => {
+                frm.refresh_field('phone');
+            });
 	},
 });
