@@ -9,7 +9,6 @@ from frappe import _
 class LibraryMember(Document):
 	def before_save(self):
 		self.full_name = f'{self.first_name} {self.last_name or ""}'
-		self.format_phone()
 
 	@frappe.whitelist()
 	def format_phone(self):
