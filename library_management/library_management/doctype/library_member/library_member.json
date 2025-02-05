@@ -5,10 +5,14 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "type",
   "first_name",
   "last_name",
   "full_name",
+  "column_break_lhfj",
   "email_address",
+  "birthdate",
+  "section_break_hpwj",
   "phone"
  ],
  "fields": [
@@ -41,11 +45,33 @@
    "fieldtype": "Table",
    "label": "Phone",
    "options": "Library Member Phone"
+  },
+  {
+   "default": "Personal",
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nCompany\nPersonal"
+  },
+  {
+   "fieldname": "column_break_lhfj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.type==\"Personal\"",
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "label": "Birthdate",
+   "mandatory_depends_on": "eval:doc.type==\"Personal\""
+  },
+  {
+   "fieldname": "section_break_hpwj",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-01-30 12:03:46.167872",
+ "modified": "2025-02-05 09:42:17.313922",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",

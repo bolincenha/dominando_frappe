@@ -10,6 +10,10 @@ class LibraryMember(Document):
 	def before_save(self):
 		self.full_name = f'{self.first_name} {self.last_name or ""}'
 
+	def validate(self):
+		if self.type == "Personal" and not self.birthdate:
+			frappe.throw(_("Birthdate is mandatory for personal members"))
+
 	@frappe.whitelist()
 	def format_phone(self):
 		for phone in self.phone:
