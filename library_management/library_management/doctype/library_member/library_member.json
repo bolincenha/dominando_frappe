@@ -9,6 +9,7 @@
   "first_name",
   "last_name",
   "full_name",
+  "enabled",
   "column_break_lhfj",
   "email_address",
   "birthdate",
@@ -67,11 +68,17 @@
   {
    "fieldname": "section_break_hpwj",
    "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-05 09:42:17.313922",
+ "modified": "2025-02-06 10:27:01.451427",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
@@ -90,7 +97,10 @@
    "write": 1
   }
  ],
+ "search_fields": "email_address, birthdate",
+ "show_title_field_in_link": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "full_name"
 }
