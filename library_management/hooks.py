@@ -83,7 +83,7 @@ app_license = "mit"
 # ------------
 
 # before_install = "library_management.install.before_install"
-# after_install = "library_management.install.after_install"
+after_install = "library_management.install.after_install"
 
 # Uninstallation
 # ------------

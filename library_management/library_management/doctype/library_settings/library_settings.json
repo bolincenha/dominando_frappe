@@ -11,6 +11,7 @@
  ],
  "fields": [
   {
+   "default": "30",
    "fieldname": "membership_period",
    "fieldtype": "Int",
    "label": "Membership Period"
@@ -20,6 +21,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "1",
    "fieldname": "max_articles",
    "fieldtype": "Int",
    "label": "Maximum Number of Issued Articles"
@@ -28,7 +30,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-11-28 10:04:25.009081",
+ "modified": "2025-02-06 10:51:30.631605",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Settings",
