@@ -10,6 +10,8 @@
   "last_name",
   "full_name",
   "enabled",
+  "enable",
+  "disable",
   "column_break_lhfj",
   "email_address",
   "birthdate",
@@ -73,12 +75,25 @@
    "default": "1",
    "fieldname": "enabled",
    "fieldtype": "Check",
+   "hidden": 1,
    "label": "Enabled"
+  },
+  {
+   "depends_on": "eval:doc.enabled==0",
+   "fieldname": "enable",
+   "fieldtype": "Button",
+   "label": "Enable"
+  },
+  {
+   "depends_on": "eval:doc.enabled==1",
+   "fieldname": "disable",
+   "fieldtype": "Button",
+   "label": "Disable"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-02-06 10:27:01.451427",
+ "modified": "2025-02-11 11:57:35.919154",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Library Member",
