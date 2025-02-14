@@ -38,6 +38,7 @@
   {
    "fieldname": "author",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Author"
   },
   {
@@ -53,12 +54,14 @@
   {
    "fieldname": "status",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Status",
    "options": "Available\nIssued"
   },
   {
    "fieldname": "publisher",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Publisher"
   },
   {
@@ -98,7 +101,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2025-01-28 15:24:08.016854",
+ "modified": "2025-02-14 13:08:43.081791",
  "modified_by": "Administrator",
  "module": "Library Management",
  "name": "Article",
@@ -142,5 +145,6 @@
  "route": "articles",
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "title_field": "article_name"
 }
